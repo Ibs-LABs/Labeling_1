@@ -68,7 +68,7 @@ cv2.destroyAllWindows()
 if len(os.listdir(os.path.join('.', 'raw'))) == 0:
     file_list = os.listdir(os.path.join('.', 'in'))
 
-    with open(os.path.join('.', 'result.json')) as f:
+    with open(os.path.join('.', 'result.json'), 'w') as f:
         f.write(json.dumps(file_list))
 
     print(file_list)
